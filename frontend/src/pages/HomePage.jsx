@@ -22,11 +22,11 @@ const HomePage = () => {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-10 py-5">
-        <h1 className="text-center text-3xl md:text-5xl lg:text-6xl font-bold text-teal-400 mb-4 mt-6">
-          Explore Our Categories
+        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-teal-400 mb-4 mt-6">
+          Discover Your Style
         </h1>
         <p className="text-center text-sm md:text-lg lg:text-xl text-gray-300 mb-12">
-          Discover the latest trends in eco-friendly fashion
+          Find products that match your unique taste
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
