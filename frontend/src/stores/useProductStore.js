@@ -63,6 +63,9 @@ export const useProductStore = create((set) => ({
     },
     deleteProduct: async (productId) => {
         set({ loading: true });
+
+        if (!window.confirm("Are you sure you want to delete this product?")) return;
+
         try {
             await axios.delete(`/products/${productId}`);
             set((prevProducts) => ({

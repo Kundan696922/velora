@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { PlusCircle, Upload, Loader} from "lucide-react"
 import { useProductStore } from "../stores/useProductStore"
 
-const categories = ["jeans", "tshirts", "shoes", "glasses", "jackets", "suits", "bags"]
+const categories = ["jeans", "tshirts", "shoes", "glasses", "jackets", "suits"]
 
 const createProductForm = () => {
 
@@ -15,10 +15,13 @@ const createProductForm = () => {
     image: "",
   });
  
-  const { createProduct, loading } = useProductStore();
+  const { createProduct , loading} = useProductStore();
+  
+  const [creating, setCreating] = useState(false); 
 
   const handelSubmit = async (e) => {
     e.preventDefault();
+    setCreating(true);
     try {
       await createProduct(newProduct);
       setNewProduct({
@@ -28,10 +31,11 @@ const createProductForm = () => {
         category: "",
         image: "",
       });
-      
     } catch (error) {
       console.log("error creating a product");
-    } 
+    } finally {
+      setCreating(false); 
+    }
   };
 
   const handleImageChange = async (e) => { 
@@ -89,7 +93,9 @@ const createProductForm = () => {
             name="descripiton"
             id="description"
             value={newProduct.description}
-            onChange={(e) => setNewProduct({ ...newProduct, description: e.target.value })}
+            onChange={(e) =>
+              setNewProduct({ ...newProduct, description: e.target.value })
+            }
             rows={"3"}
             className="mt-2 block w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             required
@@ -158,7 +164,9 @@ const createProductForm = () => {
             <Upload className="h-5 w-5 inline-block mr-2" />
             Upload Image
           </label>
-          {newProduct.image && <span className="ml-3 text-sm text-gray-400">Image uploaded</span>}
+          {newProduct.image && (
+            <span className="ml-3 text-sm text-gray-400">Image uploaded</span>
+          )}
         </div>
 
         <button
@@ -168,13 +176,13 @@ const createProductForm = () => {
 					focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-50"
           disabled={loading}
         >
-          {loading ? (
+          {creating ? (
             <>
               <Loader
                 className="mr-2 h-5 w-5 animate-spin"
                 aria-hidden="true"
               />
-              Loading...
+              Creating...
             </>
           ) : (
             <>
