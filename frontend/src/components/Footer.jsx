@@ -20,7 +20,8 @@ const Footer = () => {
 
           {/* Navigation */}
           <div className="space-y-2">
-            <h3 className="font-semibold text-teal-300">Navigation</h3>
+                      <h3 className="font-semibold text-gray-300">Navigation</h3>
+                      
             <ul className="space-y-1">
               <li>
                 <a href="/" className="hover:text-teal-400 transition-colors">
@@ -56,7 +57,7 @@ const Footer = () => {
 
           {/* Social */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-teal-300">Stay Connected</h3>
+            <h3 className="font-semibold text-gray-300">Stay Connected</h3>
             <div className="flex gap-4 mt-4 text-gray-400">
               <a href="#" className="hover:text-teal-400 transition-colors">
                 <Instagram className="w-5 h-5" />
