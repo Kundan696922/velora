@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import CategoryItem from '../components/CategoryItem';
 import { useProductStore } from '../stores/useProductStore';
 import FeaturedProducts from '../components/FeaturedProducts';
+import Footer from '../components/Footer';
 
 
 const categories = [
@@ -39,6 +40,7 @@ const HomePage = () => {
           <FeaturedProducts featuredProducts={products} />
         )}
       </div>
+      <Footer/>
     </div>
   );
 }
