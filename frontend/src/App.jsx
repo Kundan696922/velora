@@ -13,6 +13,7 @@ import CartPage from './pages/CartPage'
 import { useCartStore } from './stores/useCartStore'
 import PurchaseSuccessPage from './pages/PurchaseSuccessPage'
 import PurchaseCancelPage from './pages/PurchaseCancelPage'
+import Footer from './components/Footer'
 
 const App = () => {
   const { user, checkAuth, checkingAuth } = useUserStore();
@@ -82,6 +83,7 @@ const App = () => {
             }
           />
         </Routes>
+        <Footer/>
       </div>
       <Toaster />
     </div>
