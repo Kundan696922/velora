@@ -36,7 +36,7 @@
 
 ## 🖼️ Overview 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bef5882a-36ef-43b6-962c-87abff4b0a6c" />
+<img width="1280" height="720" alt="velora" src="https://github.com/user-attachments/assets/c1afbccb-c894-4573-a2a4-8aef921289c2" />
 
 <img width="1280" height="720" alt="velora2" src="https://github.com/user-attachments/assets/1bdf8bb7-41d3-47b7-9c2f-13fa81d1443a" />
 
