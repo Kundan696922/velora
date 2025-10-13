@@ -3,6 +3,7 @@ import CategoryItem from '../components/CategoryItem';
 import { useProductStore } from '../stores/useProductStore';
 import FeaturedProducts from '../components/FeaturedProducts';
 
+
 const categories = [
   { href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
   { href: "/tshirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },

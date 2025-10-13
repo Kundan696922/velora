@@ -1,20 +1,32 @@
-import React, { useEffect } from 'react'
-import { useProductStore } from '../stores/useProductStore'
-import { useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import ProductCard from '../components/ProductCard';
+import React, { useEffect } from "react";
+import { useProductStore } from "../stores/useProductStore";
+import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import ProductCard from "../components/ProductCard";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const CategoryPage = () => {
+  const { fetchProductsByCategory, products } = useProductStore();
+  const { category } = useParams();
+  const [isLoading, setIsLoading] = React.useState(true);
 
-    const { fetchProductsByCategory, products } = useProductStore();
+  useEffect(() => {
+    const loadProducts = async () => {
+      setIsLoading(true);
+      await fetchProductsByCategory(category);
+      setIsLoading(false);
+    };
+    loadProducts();
+  }, [category]); // Remove fetchProductsByCategory from deps
 
-    const { category } = useParams();
-    
-    useEffect(() => {
-        fetchProductsByCategory(category);
-    }, [fetchProductsByCategory, category]);
+  console.log("products:", products);
 
-    console.log("products:", products);
+  if (isLoading) {
+    return (
+        <LoadingSpinner />
+    );
+  }
+
   return (
     <div className="min-h-screen">
       <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -31,21 +43,21 @@ const CategoryPage = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
           {products?.length === 0 && (
-            <h2 className="text-3xl font-semibold texy-gray-300 text-center col-span-full">
+            <h2 className="text-3xl font-semibold text-gray-300 text-center col-span-full">
               No products found
             </h2>
           )}
 
           {products?.map((product) => (
-            <ProductCard key={ product._id} product={ product} />
+            <ProductCard key={product._id} product={product} />
           ))}
         </motion.div>
       </div>
     </div>
   );
-}
+};
 
-export default CategoryPage
+export default CategoryPage;
