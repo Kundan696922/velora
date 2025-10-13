@@ -59,6 +59,7 @@
 
 1. Create a `.env` file in the **backend** folder:
    ```env
+   
    PORT=5000
    MONGO_URI=your_mongo_uri
 
@@ -75,8 +76,8 @@
    CLIENT_URL=http://localhost:5173
    NODE_ENV=development
    
-2. Add .env to .gitignore to keep it private.
-3. Restart your dev server after setting these variables.
+3. Add .env to .gitignore to keep it private.
+4. Restart your dev server after setting these variables.
 
 ### Prerequisites
 
