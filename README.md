@@ -20,6 +20,7 @@
 | ![Node.js](https://img.icons8.com/color/24/nodejs.png) **Node.js** | Server-side JavaScript runtime |
 | ![Redis](https://img.icons8.com/color/24/redis.png) **Upstash Redis** | Cloud-based Redis for caching and session management |
 | ![Cloudinary](https://img.icons8.com/color/24/cloud.png) **Cloudinary** | Image and media optimization & storage platform |
+| ![Stripe](https://img.icons8.com/color/24/stripe.png) **Stripe** | Secure payment gateway integration |
 | ![TailwindCSS](https://img.icons8.com/color/24/tailwindcss.png) **TailwindCSS + DaisyUI** | Modern, responsive UI styling |
 | ![VSCode](https://img.icons8.com/color/24/visual-studio-code-2019.png) **VS Code** | Code editor |
 
@@ -58,6 +59,21 @@
 
 1. Create a `.env` file in the **backend** folder:
    ```env
+   PORT=5000
+   MONGO_URI=your_mongo_uri
+
+   UPSTASH_REDIS_URL=your_redis_url
+
+   ACCESS_TOKEN_SECRET=your_access_token_secret
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret
+
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   CLIENT_URL=http://localhost:5173
+   NODE_ENV=development
    
 2. Add .env to .gitignore to keep it private.
 3. Restart your dev server after setting these variables.
