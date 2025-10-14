@@ -91,7 +91,7 @@ Ensure you have the following installed:
  🧬 Clone the repository:
    ```bash
    git clone https://github.com/Kundan696922/velora.git
-   cd fitrack
+   cd velora
    ```
 
 🚀 Start the App
