@@ -1,10 +1,12 @@
-# ✨ Vibe Commerce – Full-Stack E-Commerce Shopping Cart
-Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with the MERN stack + Tailwind CSS. It offers a sleek, responsive shopping experience with product browsing, cart management, and secure mock checkout functionality.
+# 📝 Velora– Full-Stack E-Commerce Web App
+
+**Velora** is a **Full-Stack E-Commerce Web App** built with the **MERN stack** + Tailwind CSS. It offers a premium, responsive shopping experience with Stripe payments, coupon support, and a sleek modern dark UI.
+
 ---
 
 ## 🚀 Demo
 
-> 🌐 Live Demo: 👉 [View ](https://drive.google.com/file/d/1CSJemmR6SgCPg2yLxqGzPIwbATO3Jz0R/view?usp=sharing)
+> 🌐 Live Demo: 👉 [View Velora](https://velora-qwjc.onrender.com/)
 
 ---
 
@@ -27,28 +29,26 @@ Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with th
 
 ## 🌟 Features
 
-- ✨ Product Grid – Browse 8 featured products with search functionality
-- 🛒 Shopping Cart – Add, remove, and update product quantities
-- 📱 Responsive Design – Mobile-first design that works on all devices
-- 📝 Checkout Form – Email & name validation for secure orders
-- 🧾 Order Receipt – Mock receipt with unique order ID & timestamps
-- ✅ Form Validation – Client-side validation for checkout data
-- ⚡ Real-time Updates – Cart totals update instantly
-- 🎨 Modern UI – Purple-to-blue gradient theme with Tailwind CSS
-- 🔗 REST APIs – 5 complete REST endpoints for full CRUD operations
-- 📊 Order History – All orders permanently stored in MongoDB
+- 🛒 **Full E-Commerce System** – Product, category, cart, and checkout management
+- 💳 **Stripe Payments** – Secure and smooth checkout with real-time processing
+- 🔐 **Authentication & Security** – JWT-based login with refresh tokens and data protection
+- 👑 **Admin Dashboard** – Manage products, users, coupons, and sales analytics
+- ⚡ **Performance Boost** – Redis caching for faster API responses
+- 🎨 **Modern UI** – Tailwind CSS-powered design with responsive, sleek dark theme
 
 ---
 
 ## 🖼️ Overview 
 
-<img width="1920" height="1080" alt="Screenshot 2025-10-30 225827" src="https://github.com/user-attachments/assets/0f69defe-bebe-4f51-8325-44a1fa2b823e" />
+<img width="1280" height="720" alt="velora" src="https://github.com/user-attachments/assets/c1afbccb-c894-4573-a2a4-8aef921289c2" />
 
-<img width="1920" height="1080" alt="Screenshot 2025-10-30 225803" src="https://github.com/user-attachments/assets/709f3e01-da87-4799-94d0-cd817e4c437b" />
+<img width="1280" height="720" alt="velora2" src="https://github.com/user-attachments/assets/1bdf8bb7-41d3-47b7-9c2f-13fa81d1443a" />
 
-<img width="1920" height="1080" alt="Screenshot 2025-10-30 225827" src="https://github.com/user-attachments/assets/79545a75-bc0c-4b0e-bc5c-cbe4f28c0519" />
+<img width="1280" height="720" alt="velora3" src="https://github.com/user-attachments/assets/0b5267af-d78b-4008-af7d-fcb357c2823e" />
 
+<img width="1280" height="720" alt="velora4" src="https://github.com/user-attachments/assets/496b091d-d8d1-40ff-93a4-16bc46174d46" />
 
+<img width="1280" height="720" alt="velora5" src="https://github.com/user-attachments/assets/1cefefa0-c5d1-4a1a-941e-ace172a95962" />
 
 
 ---
@@ -62,6 +62,18 @@ Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with th
    
    PORT=5000
    MONGO_URI=your_mongo_uri
+
+   UPSTASH_REDIS_URL=your_redis_url
+
+   ACCESS_TOKEN_SECRET=your_access_token_secret
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret
+
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   CLIENT_URL=http://localhost:5173
    NODE_ENV=development
    
 3. Add .env to .gitignore to keep it private.
@@ -74,23 +86,16 @@ Ensure you have the following installed:
 - **npm**
 - **MongoDB** Atlas account
 
-#### Installation
+### Installation
 
  🧬 Clone the repository:
    ```bash
-   git clone https://github.com/Kundan696922/noteboard.git
-   cd noteboard
+   git clone https://github.com/Kundan696922/velora.git
+   cd velora
    ```
 
-🔧 Run the Backend
+🚀 Start the App
    ```bash
-   cd backend
    npm install
-   npm run dev
-   ```
-
-💻 Run the Frontend
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
+   npm run build
+   npm run start
