@@ -1,12 +1,10 @@
-# 📝 Velora– Full-Stack E-Commerce Web App
-
-**Velora** is a **Full-Stack E-Commerce Web App** built with the **MERN stack** + Tailwind CSS. It offers a premium, responsive shopping experience with Stripe payments, coupon support, and a sleek modern dark UI.
-
+# ✨ Vibe Commerce – Full-Stack E-Commerce Shopping Cart
+Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with the MERN stack + Tailwind CSS. It offers a sleek, responsive shopping experience with product browsing, cart management, and secure mock checkout functionality.
 ---
 
 ## 🚀 Demo
 
-> 🌐 Live Demo: 👉 [View Velora](https://velora-qwjc.onrender.com/)
+> 🌐 Live Demo: 👉 [View ](https://velora-qwjc.onrender.com/)
 
 ---
 
@@ -29,12 +27,17 @@
 
 ## 🌟 Features
 
-- 🛒 **Full E-Commerce System** – Product, category, cart, and checkout management
-- 💳 **Stripe Payments** – Secure and smooth checkout with real-time processing
-- 🔐 **Authentication & Security** – JWT-based login with refresh tokens and data protection
-- 👑 **Admin Dashboard** – Manage products, users, coupons, and sales analytics
-- ⚡ **Performance Boost** – Redis caching for faster API responses
-- 🎨 **Modern UI** – Tailwind CSS-powered design with responsive, sleek dark theme
+- ✨ Product Grid – Browse 8 featured products with search functionality
+- 🛒 Shopping Cart – Add, remove, and update product quantities
+- 💾 MongoDB Persistence – Cart data persists across sessions
+- 📱 Responsive Design – Mobile-first design that works on all devices
+- 📝 Checkout Form – Email & name validation for secure orders
+- 🧾 Order Receipt – Mock receipt with unique order ID & timestamps
+- ✅ Form Validation – Client-side validation for checkout data
+- ⚡ Real-time Updates – Cart totals update instantly
+- 🎨 Modern UI – Purple-to-blue gradient theme with Tailwind CSS
+- 🔗 REST APIs – 5 complete REST endpoints for full CRUD operations
+- 📊 Order History – All orders permanently stored in MongoDB
 
 ---
 
@@ -62,18 +65,6 @@
    
    PORT=5000
    MONGO_URI=your_mongo_uri
-
-   UPSTASH_REDIS_URL=your_redis_url
-
-   ACCESS_TOKEN_SECRET=your_access_token_secret
-   REFRESH_TOKEN_SECRET=your_refresh_token_secret
-
-   CLOUDINARY_CLOUD_NAME=your_cloud_name
-   CLOUDINARY_API_KEY=your_api_key
-   CLOUDINARY_API_SECRET=your_api_secret
-
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   CLIENT_URL=http://localhost:5173
    NODE_ENV=development
    
 3. Add .env to .gitignore to keep it private.
@@ -86,16 +77,23 @@ Ensure you have the following installed:
 - **npm**
 - **MongoDB** Atlas account
 
-### Installation
+#### Installation
 
  🧬 Clone the repository:
    ```bash
-   git clone https://github.com/Kundan696922/velora.git
-   cd velora
+   git clone https://github.com/Kundan696922/noteboard.git
+   cd noteboard
    ```
 
-🚀 Start the App
+🔧 Run the Backend
    ```bash
+   cd backend
    npm install
-   npm run build
-   npm run start
+   npm run dev
+   ```
+
+💻 Run the Frontend
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
