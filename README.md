@@ -4,7 +4,7 @@ Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with th
 
 ## 🚀 Demo
 
-> 🌐 Live Demo: 👉 [View ](https://velora-qwjc.onrender.com/)
+> 🌐 Live Demo: 👉 [View ](https://drive.google.com/file/d/1CSJemmR6SgCPg2yLxqGzPIwbATO3Jz0R/view?usp=sharing)
 
 ---
 
@@ -29,7 +29,6 @@ Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with th
 
 - ✨ Product Grid – Browse 8 featured products with search functionality
 - 🛒 Shopping Cart – Add, remove, and update product quantities
-- 💾 MongoDB Persistence – Cart data persists across sessions
 - 📱 Responsive Design – Mobile-first design that works on all devices
 - 📝 Checkout Form – Email & name validation for secure orders
 - 🧾 Order Receipt – Mock receipt with unique order ID & timestamps
@@ -43,15 +42,13 @@ Vibe Commerce is a Full-Stack E-Commerce Shopping Cart Application built with th
 
 ## 🖼️ Overview 
 
-<img width="1280" height="720" alt="velora" src="https://github.com/user-attachments/assets/c1afbccb-c894-4573-a2a4-8aef921289c2" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-30 225827" src="https://github.com/user-attachments/assets/0f69defe-bebe-4f51-8325-44a1fa2b823e" />
 
-<img width="1280" height="720" alt="velora2" src="https://github.com/user-attachments/assets/1bdf8bb7-41d3-47b7-9c2f-13fa81d1443a" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-30 225803" src="https://github.com/user-attachments/assets/709f3e01-da87-4799-94d0-cd817e4c437b" />
 
-<img width="1280" height="720" alt="velora3" src="https://github.com/user-attachments/assets/0b5267af-d78b-4008-af7d-fcb357c2823e" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-30 225827" src="https://github.com/user-attachments/assets/79545a75-bc0c-4b0e-bc5c-cbe4f28c0519" />
 
-<img width="1280" height="720" alt="velora4" src="https://github.com/user-attachments/assets/496b091d-d8d1-40ff-93a4-16bc46174d46" />
 
-<img width="1280" height="720" alt="velora5" src="https://github.com/user-attachments/assets/1cefefa0-c5d1-4a1a-941e-ace172a95962" />
 
 
 ---
